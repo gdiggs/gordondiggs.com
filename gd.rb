@@ -2,5 +2,9 @@ require 'bundler'
 Bundler.require
 
 get '/' do
-  'Sup'
+  haml :index
+end
+
+get '/stylesheet.css' do
+  scss :stylesheet
 end

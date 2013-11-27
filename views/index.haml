@@ -1,0 +1,4 @@
+.nav.text-center.scripty
+  - ['tweets', 'photos', 'code', 'blog', 'contact'].each do |category|
+    %span
+      %a{ href: "##{category}" }= category.capitalize
