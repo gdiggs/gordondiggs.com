@@ -3,5 +3,5 @@
     %span
       %a{ href: "##{category}" }= category.capitalize
 
-  - CATEGORIES.each do |category|
-    = haml "#{category}_template".to_sym rescue nil
+- CATEGORIES.each do |category|
+  = haml "#{category}_template".to_sym rescue nil
