@@ -5,6 +5,7 @@ gem "psych"
 gem "racc"
 gem "rubysl", '2.0.14'
 gem 'puma', '2.6.0'
+gem 'json'
 gem 'sinatra'
 gem 'haml'
 gem 'sass'
