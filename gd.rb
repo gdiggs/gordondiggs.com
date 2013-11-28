@@ -18,6 +18,11 @@ configure do
     config.client_secret = ENV['INSTAGRAM_CLIENT_SECRET']
     config.access_token = ENV['INSTAGRAM_ACCESS_TOKEN']
   end
+
+  Tumblr.configure do |config|
+    config.consumer_key = ENV['TUMBLR_CONSUMER_KEY']
+    config.consumer_secret = ENV['TUMBLR_SECRET_KEY']
+  end
 end
 
 get '/' do
@@ -36,6 +41,12 @@ CATEGORIES.each do |category|
 end
 
 helpers do
+  def latest_blog
+    client = Tumblr::Client.new
+    response = client.posts("gordondiggs.tumblr.com")
+    response['posts'].first(DEFAULT_NUM_ITEMS)
+  end
+
   def latest_code
     feed = Feedzirra::Feed.fetch_and_parse('https://github.com/gordondiggs.atom')
     entries = feed.entries.first(DEFAULT_NUM_ITEMS)

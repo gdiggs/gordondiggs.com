@@ -49,6 +49,7 @@ GEM
     multipart-post (1.2.0)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    oauth (0.4.7)
     psych (2.0.2)
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
@@ -283,6 +284,13 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
+    tumblr_client (0.8.2)
+      faraday (>= 0.8)
+      faraday_middleware (>= 0.8)
+      json
+      mime-types
+      oauth
+      simple_oauth
     tux (0.3.0)
       ripl (>= 0.3.5)
       ripl-multi_line (>= 0.2.4)
@@ -317,6 +325,7 @@ DEPENDENCIES
   rubysl (= 2.0.14)
   sass
   sinatra
+  tumblr_client
   tux
   twitter
   typhoeus

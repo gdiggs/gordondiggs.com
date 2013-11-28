@@ -11,6 +11,21 @@ $(function() {
     });
   }
 
+  if($('#blog').length > 0) {
+    $.getJSON('/latest_blog.json', function(response) {
+      var html = '',
+          template = $('#blog_template').html();
+      $.each(response, function(i, post) {
+        var date = new Date(post.timestamp*1000);
+        var mins = date.getMinutes() > 10 ? date.getMinutes() : '0'+date.getMinutes();
+        post.date = date.toDateString() + ' ' + date.getHours() + ':' + mins;
+        html += Mustache.render(template, post);
+      });
+
+      $('.posts ul').html(html);
+    });
+  }
+
   if($('#photos').length > 0) {
     $.getJSON('/latest_photos.json', function(response) {
       var html = '',
