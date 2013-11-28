@@ -1,0 +1,14 @@
+%script#record_template{ :type => 'text/html' }
+  :plain
+    <li>
+      <i>{{title}}</i> by {{artist}} ({{color}} {{format}} released {{year}} on {{label}})
+    </li>
+
+
+#records
+  %h2.scripty.text-center
+    Lastest Records
+    %a{ :href => "https://x-vinyl.herokuapp.com" } See all
+
+  .records
+    %ul

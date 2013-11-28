@@ -37,5 +37,14 @@ helpers do
       oembed = settings.twitter_client.oembeds(tweets)
       {text: t.text, favorites: t.favorite_count, retweets: t.retweet_count, uri: t.uri, created_at: t.created_at, oembed: oembed.html}
     end
+
+  rescue Twitter::Error::Unauthorized => e
+    puts "!!! ERROR: #{e}"
+    return []
+  end
+
+  def latest_records
+    response = Typhoeus.get("https://x-vinyl.herokuapp.com/items/latest.json")
+    JSON.parse(response.body)
   end
 end

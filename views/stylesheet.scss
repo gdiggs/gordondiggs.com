@@ -3,6 +3,8 @@ body {
   background: -moz-linear-gradient(center top, #054175 0%, #06131F 100%);
   background-color: #06131F;
   color: white;
+  font-family: 'Molengo', arial, serif;
+  font-size: 20px;
 }
 
 a {
@@ -18,10 +20,15 @@ a {
   font-family: 'Reenie Beanie', arial, serif;
 }
 
-.container h1 {
+h1 {
   font-size: 6em;
   font-weight: bold;
   color: white;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .header {
@@ -30,7 +37,7 @@ a {
 
 .nav {
   margin-top: 20px;
-  font-size: 3em;
+  font-size: 2.5em;
   span:not(:last-child):after {
     content: '|';
   }
@@ -42,4 +49,11 @@ a {
 }
 .follow-button {
   display: none !important;
+}
+
+.records ul {
+  list-style: none;
+  li {
+    padding: 10px 0;
+  }
 }
