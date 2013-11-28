@@ -11,4 +11,12 @@ $(function() {
       $('.records ul').html(html);
     });
   }
+
+  $('.nav a').click(function() {
+    var href = $(this).attr('href');
+    var id = href.replace(/#/, '');
+    var $link = $("a[name='"+ id +"']");
+    $('html,body').animate({scrollTop: $link.offset().top}, '400');
+    return false;
+  });
 });
