@@ -36,6 +36,20 @@ CATEGORIES.each do |category|
 end
 
 helpers do
+  def latest_code
+    feed = Feedzirra::Feed.fetch_and_parse('https://github.com/gordondiggs.atom')
+    entries = feed.entries.first(DEFAULT_NUM_ITEMS)
+    entries.map do |entry|
+      page = Nokogiri::HTML(entry.content)
+      str = page.css('time').first.to_s
+      str += " - "
+      str += page.css('.title').first.inner_html
+      message = page.css('.message').first.css('blockquote').inner_html.strip rescue nil
+      str += " - #{message}" if message
+      str
+    end
+  end
+
   def latest_photos
     Instagram.user_recent_media(15938031).first(12).map do |image|
       {:url => image.link, :src => image.images.low_resolution.url}
