@@ -1,0 +1,23 @@
+#contact
+  %a.anchor{ :name => 'contact' }
+  %h2.scripty.text-center
+    Contact
+
+  %p
+    You can
+    = succeed "," do
+      %a.email-link{:href => "javascript:location='mailto:\\u0067\\u006f\\u0072\\u0064\\u006f\\u006e\\u0040\\u0067\\u006f\\u0072\\u0064\\u006f\\u006e\\u0064\\u0069\\u0067\\u0067\\u0073\\u002e\\u0063\\u006f\\u006d';void 0"} email me
+    or find me on
+    = succeed "," do
+      %a.twitter-link{:href => "http://bit.ly/dfSqVd", :target => "_blank"} Twitter
+    = succeed "," do
+      %a.linkedin-link{:href => "http://bit.ly/a52zRF", :target => "_blank"} LinkedIn
+    = succeed "," do
+      %a.foursquare-link{:href => "http://bit.ly/d0zd6Q", :target => "_blank"} foursquare
+    or
+    %a.github-link{:href => "http://bit.ly/dm45Cj", :target => "_blank"} GitHub
+ 
+  %p
+    Alternatively, You can just
+    = succeed "." do
+      %a.google-link{:href => "http://bit.ly/9MYQgC", :target => "_blank"} Google me

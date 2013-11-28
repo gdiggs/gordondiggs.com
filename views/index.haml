@@ -4,4 +4,4 @@
       %a{ href: "##{category}" }= category.capitalize
 
 - CATEGORIES.each do |category|
-  = haml "#{category}_template".to_sym rescue "FAILED TO RENDER #{category}"
+  = haml "#{category}_template".to_sym
