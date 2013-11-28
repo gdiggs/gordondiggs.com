@@ -11,6 +11,18 @@ $(function() {
     });
   }
 
+  if($('#photos').length > 0) {
+    $.getJSON('/latest_photos.json', function(response) {
+      var html = '',
+          template = $('#photo_template').html();
+      $.each(response, function(i, record) {
+        html += Mustache.render(template, record);
+      });
+
+      $('.photos').html(html);
+    });
+  }
+
   $('.nav a').click(function() {
     var href = $(this).attr('href');
     var id = href.replace(/#/, '');

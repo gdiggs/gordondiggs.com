@@ -12,6 +12,12 @@ configure do
     config.access_token_secret = ENV['ACCESS_SECRET']
   end
   set :twitter_client, client
+
+  Instagram.configure do |config|
+    config.client_id = ENV['INSTAGRAM_CLIENT_ID']
+    config.client_secret = ENV['INSTAGRAM_CLIENT_SECRET']
+    config.access_token = ENV['INSTAGRAM_ACCESS_TOKEN']
+  end
 end
 
 get '/' do
@@ -30,6 +36,12 @@ CATEGORIES.each do |category|
 end
 
 helpers do
+  def latest_photos
+    Instagram.user_recent_media(15938031).first(12).map do |image|
+      {:url => image.link, :src => image.images.low_resolution.url}
+    end
+  end
+
   def latest_tweets
     tweets = settings.twitter_client.user_timeline("GordonDiggs", :exclude_replies => true, :count => 5)
 
