@@ -1,9 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.5)
     atomic (1.1.14)
     bond (0.4.3)
-    buftok (0.1)
+    buftok (0.2.0)
     descendants_tracker (0.0.3)
     dotenv (0.8.0)
     equalizer (0.0.7)
@@ -265,8 +266,9 @@ GEM
       ripl-multi_line (>= 0.2.4)
       ripl-rack (>= 0.2.0)
       sinatra (>= 1.2.1)
-    twitter (5.0.0)
-      buftok (~> 0.1.0)
+    twitter (5.1.1)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
       descendants_tracker (~> 0.0.1)
       equalizer (~> 0.0.7)
       faraday (>= 0.8, < 0.10)

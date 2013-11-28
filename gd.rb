@@ -31,11 +31,10 @@ end
 
 helpers do
   def latest_tweets
-    tweets = settings.twitter_client.user_timeline("GordonDiggs", :exclude_replies => true, :count => DEFAULT_NUM_ITEMS)
+    tweets = settings.twitter_client.user_timeline("GordonDiggs", :exclude_replies => true, :count => 5)
 
     tweets.map do |t|
-      oembed = settings.twitter_client.oembeds(tweets)
-      {text: t.text, favorites: t.favorite_count, retweets: t.retweet_count, uri: t.uri, created_at: t.created_at, oembed: oembed.html}
+      settings.twitter_client.oembed(t).html
     end
 
   rescue Twitter::Error::Unauthorized => e
