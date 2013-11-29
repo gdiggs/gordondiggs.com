@@ -1,5 +1,6 @@
 #tweets.text-center
-  %h2.scripty Tweets
+  %a.anchor{ :name => 'tweets' }
+  %h2.scripty Latest Tweets
 
   - latest_tweets.each do |t|
     = t

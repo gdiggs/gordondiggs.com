@@ -4,5 +4,6 @@
     Github Activity
     %a{ :href => "https://github.com/gordondiggs" } See more
 
-  - latest_code.each do |c|
-    %p= c
+  %ul
+    - latest_code.each do |c|
+      %li= c
