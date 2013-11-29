@@ -80,7 +80,7 @@ helpers do
   end
 
   def latest_records
-    response = Typhoeus.get("https://x-vinyl.herokuapp.com/items/latest.json")
+    response = Typhoeus.get("https://x-vinyl.herokuapp.com/items/latest.json?num=#{DEFAULT_NUM_ITEMS}")
     JSON.parse(response.body)
   end
 end
