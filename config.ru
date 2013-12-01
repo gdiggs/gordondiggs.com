@@ -1,2 +1,2 @@
 require './gd'
-run Sinatra::Application
+run Gd
