@@ -38,6 +38,8 @@ $(function() {
     });
   }
 
+  $('#speaking').fitVids();
+
   $('.nav a').click(function() {
     var href = $(this).attr('href');
     var id = href.replace(/#/, '');

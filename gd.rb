@@ -3,7 +3,7 @@ Bundler.require
 
 class Gd < Sinatra::Application
   DEFAULT_NUM_ITEMS = 10
-  CATEGORIES = ['tweets', 'photos', 'records', 'code', 'blog', 'contact']
+  CATEGORIES = ['tweets', 'photos', 'records', 'code', 'speaking', 'blog', 'contact']
 
   configure do
     client = Twitter::REST::Client.new do |config|
