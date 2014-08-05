@@ -1,10 +1,7 @@
 source 'https://rubygems.org'
-ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.1"
+ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.7"
 
-gem "psych"
-gem "racc"
-gem "rubysl", '2.0.14'
-gem 'puma', '2.6.0'
+gem 'puma'
 gem 'json'
 gem 'sinatra'
 gem 'twitter'
