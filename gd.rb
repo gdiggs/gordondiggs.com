@@ -49,7 +49,7 @@ class Gd < Sinatra::Application
     end
 
     def latest_code
-      feed = Feedzirra::Feed.fetch_and_parse('https://github.com/gordondiggs.atom')
+      feed = Feedjira::Feed.fetch_and_parse('https://github.com/gordondiggs.atom')
       entries = feed.entries.first(DEFAULT_NUM_ITEMS)
       entries.map do |entry|
         page = Nokogiri::HTML(entry.content)

@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.1.0", :engine => "rbx", :engine_version => "2.2.7"
+ruby "2.3.0"
 
 gem 'puma'
 gem 'json'
@@ -7,7 +7,7 @@ gem 'sinatra'
 gem 'twitter'
 gem 'typhoeus'
 gem 'instagram'
-gem 'feedzirra'
+gem 'feedjira'
 gem 'haml'
 gem 'sass'
 gem 'foreman'
