@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Reenie+Beanie');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$gd-blue: #054175;
+$gd-light-gray: #666;
+$gd-gray: #333;
+
+a {
+  color: $gd-light-gray;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.anchor {
+    text-decoration: none;
+  }
+}
+
+html {
+  color: $gd-gray;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  color: $gd-blue;
+  font-family: 'Reenie Beanie', arial, serif;
+  font-size: 4.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Reenie Beanie', arial, serif;
+}
+
+nav {
+  font-family: 'Reenie Beanie', arial, serif;
+  font-size: 2em;
+  margin-top: 20px;
+
+  &.main {
+    span:not(:last-child)::after {
+      color: $gd-light-gray;
+      content: '|';
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.fa {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  line-height: 1.5em;
+  list-style: none;
+}
+
+.rating {
+  color: $gd-blue;
+}
+
+footer {
+  font-family: 'Reenie Beanie', arial, serif;
+  padding-bottom: 100px;
+
+  a {
+    color: $gd-blue;
+  }
+}

@@ -1,2 +1,0 @@
-require './gd'
-run Gd
