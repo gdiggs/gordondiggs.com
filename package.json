@@ -27,7 +27,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "netlify-lambda": "^0.4.0",
+    "netlify-lambda": "^1.4.13",
     "prettier": "^1.13.7"
   },
   "repository": {
