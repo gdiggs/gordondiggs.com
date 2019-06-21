@@ -5,12 +5,12 @@ import Helmet from "react-helmet";
 import Header from "../components/header";
 import "./index.scss";
 
-const Layout = ({ children, data }) => (
+const Layout = ({ children }) => (
   <div>
     <Helmet title="Gordon Diggs" />
     <Header siteTitle="Gordon Diggs" />
     <div>
-      {children()}
+      {children}
     </div>
     <footer className="text-center">
       <p><a href="https://github.com/gordondiggs/gordondiggs.com">See the code for this site on Github</a></p>
