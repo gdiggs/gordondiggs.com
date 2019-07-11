@@ -3930,8 +3930,8 @@ gatsby-page-utils@^0.0.2:
     slash "^1.0.0"
 
 gatsby-plugin-netlify@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.0.tgz#3adc50333e58049075bc0eb7b9655ae4e61c3d7e"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.1.tgz#82355ea9bc969bf6d4876817fbe7ed0d74d7dd3d"
   dependencies:
     "@babel/runtime" "^7.0.0"
     fs-extra "^4.0.2"
