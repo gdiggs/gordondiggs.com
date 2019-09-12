@@ -1,0 +1,32 @@
+$gd-blue: #054175;
+$gd-light-gray: #666;
+$gd-gray: #333;
+
+article {
+  margin-top: 20px;
+
+  h2 {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  blockquote {
+    border-left: 3px solid $gd-light-gray;
+    padding-left: 5px;
+  }
+
+  ul {
+    line-height: 1em;
+    list-style: disc;
+  }
+}
+
+.blog-post {
+  width: 80%;
+  margin: auto;
+  nav {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    text-align: right
+  }
+}
