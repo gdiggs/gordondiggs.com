@@ -8,7 +8,7 @@ class PostListing extends React.Component {
   }
 
   title() {
-    return this.props.frontmatter.title || this.props.fields.slug
+    return this.props.frontmatter.title || this.props.fields.slug;
   }
 
   render() {
@@ -31,12 +31,12 @@ class BlogPosts extends React.Component {
         {this.props.posts.map(function(post, i) {
           return (
             <li key={`blogpost${i}`}><PostListing {...post.node} /></li>
-          )
+          );
         })}
         </ul>
       </div>
-    )
+    );
   }
 }
 
-export default BlogPosts
+export default BlogPosts;

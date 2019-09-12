@@ -1,11 +1,13 @@
+/*global __PATH_PREFIX__*/
+
 import React from "react";
 import Link from "gatsby-link";
 import FontAwesome from "react-fontawesome";
 
 class Header extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { location, title, children } = this.props;
+    const rootPath = `${__PATH_PREFIX__}/`;
 
     return (
       <div>
@@ -30,7 +32,7 @@ class Header extends React.Component {
           </nav>
         )}
       </div>
-    )
+    );
   }
 };
 

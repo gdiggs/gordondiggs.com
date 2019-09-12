@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 import Helmet from "react-helmet";
 
 import Header from "../components/header";
@@ -7,8 +7,7 @@ import "./index.scss";
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { location, title, children } = this.props;
 
     return (
       <div>
@@ -20,8 +19,8 @@ class Layout extends React.Component {
           <p>Sloths are cool.</p>
         </footer>
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;

@@ -1,10 +1,10 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import BlogPosts from "../components/blog-posts"
-import SEO from "../components/seo"
+import Bio from "../components/bio";
+import Layout from "../components/layout";
+import BlogPosts from "../components/blog-posts";
+import SEO from "../components/seo";
 import Tweets from "../components/tweets.js";
 import Photos from "../components/photos.js";
 import Movies from "../components/movies.js";
@@ -12,9 +12,9 @@ import Records from "../components/records.js";
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -25,11 +25,11 @@ class BlogIndex extends React.Component {
         <Movies />
         <Records />
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -54,4 +54,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
