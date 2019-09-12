@@ -4,7 +4,9 @@ import FontAwesome from "react-fontawesome";
 
 const Header = ({ siteTitle }) => (
   <div>
-    <h1 className="text-center">{siteTitle}</h1>
+    <h1 className="text-center">
+      <a href="/">{siteTitle}</a>
+    </h1>
     <nav className="social text-center">
       <a href="https://twitter.com/gordondiggs"><FontAwesome name="twitter" /></a>
       <a href="https://www.linkedin.com/in/gordondiggs"><FontAwesome name="linkedin" /></a>
@@ -14,6 +16,7 @@ const Header = ({ siteTitle }) => (
       </a>
     </nav>
     <nav className="main text-center">
+      <span><a href="#blog-posts">Blog Posts</a></span>
       <span><a href="#tweets">Tweets</a></span>
       <span><a href="#photos">Photos</a></span>
       <span><a href="#movies">Movies</a></span>
