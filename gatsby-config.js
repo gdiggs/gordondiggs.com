@@ -1,15 +1,58 @@
-/* global module, require */
+/*global require, module, __dirname*/
 
 const proxy = require("http-proxy-middleware");
 
 module.exports = {
   siteMetadata: {
     title: "Gordon Diggs",
+    description: "Personal site",
+    author: "Gordon Diggs",
+    siteUrl: "https://gordondiggs.com",
+    social: {
+      github: "gdiggs",
+      instagram: "gordondiggs",
+      twitter: "gordondiggs",
+    },
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-netlify",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: "blog",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: "assets",
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 590,
+            },
+          },
+          {
+            resolve: "gatsby-remark-responsive-iframe",
+            options: {
+              wrapperStyle: "margin-bottom: 1.0725rem",
+            },
+          },
+          "gatsby-remark-prismjs",
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
+        ],
+      },
+    },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -18,11 +61,14 @@ module.exports = {
         head: false,
         // Setting this parameter is also optional
         respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
       },
-    }
-  ],
+    },
+    "gatsby-plugin-feed",
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-react-helmet",
+   ],
   developMiddleware: app => {
     app.use(
       "/.netlify/functions",
