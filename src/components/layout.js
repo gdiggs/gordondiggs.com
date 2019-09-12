@@ -13,7 +13,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Helmet title={title} />
-        <Header siteTitle={title} />
+        <Header location={this.props.location} title={title} />
         <div>{children}</div>
         <footer className="text-center">
           <p><a href="https://github.com/gordondiggs/gordondiggs.com">See the code for this site on Github</a></p>
