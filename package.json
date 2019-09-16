@@ -40,7 +40,7 @@
   "devDependencies": {
     "netlify-lambda": "^1.4.13",
     "prettier": "^1.18.2",
-    "webpack": "^4.40.1"
+    "webpack": "^4.40.2"
   },
   "keywords": [
     "gatsby"
