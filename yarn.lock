@@ -651,15 +651,9 @@
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
     "@babel/plugin-transform-react-jsx-source" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5":
-  version "7.5.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.0.tgz#4fc1d642a9fd0299754e8b5de62c631cf5568205"
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -4654,11 +4648,11 @@ gatsby-plugin-google-analytics@^2.1.16:
   dependencies:
     "@babel/runtime" "^7.6.0"
 
-gatsby-plugin-netlify@^2.1.12:
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.12.tgz#5e6665140622d4f03ddb048e363cb403136e9f7d"
+gatsby-plugin-netlify@^2.1.18:
+  version "2.1.18"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.18.tgz#a9ce7c1cdba32badaa14b6b5090ecbf1c5266b62"
   dependencies:
-    "@babel/runtime" "^7.6.0"
+    "@babel/runtime" "^7.6.2"
     fs-extra "^8.1.0"
     kebab-hash "^0.1.2"
     lodash "^4.17.15"
@@ -6826,13 +6820,9 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@^4.0.0, lodash@^4.17.15, lodash@~4.17.10:
+lodash@^4.0.0, lodash@^4.11.1, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@~4.17.10:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-
-lodash@^4.11.1, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
-  version "4.17.14"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
 
 log-update@^3.0.0:
   version "3.3.0"
