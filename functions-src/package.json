@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.19.1",
     "letterboxd": "^1.0.2",
     "node-instagram": "^4.3.0",
     "twitter": "^1.7.1"
