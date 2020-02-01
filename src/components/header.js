@@ -29,6 +29,7 @@ class Header extends React.Component {
             <span><a href="#photos">Photos</a></span>
             <span><a href="#movies">Movies</a></span>
             <span><a href="#records">Records</a></span>
+            <span><a href="#mixes">Mixes</a></span>
           </nav>
         )}
       </div>

@@ -7,6 +7,7 @@ import BlogPosts from "../components/blog-posts";
 import SEO from "../components/seo";
 import Tweets from "../components/tweets.js";
 import Photos from "../components/photos.js";
+import Mixes from "../components/mixes.js";
 import Movies from "../components/movies.js";
 import Records from "../components/records.js";
 
@@ -24,6 +25,7 @@ class BlogIndex extends React.Component {
         <Photos />
         <Movies />
         <Records />
+        <Mixes />
       </Layout>
     );
   }
