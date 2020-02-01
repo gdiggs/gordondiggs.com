@@ -29,7 +29,6 @@ class Movies extends Component {
   componentDidMount() {
     axios.get(".netlify/functions/movies")
       .then(resp => {
-        console.log(resp);
         this.setState({
           movies: resp.data
         });
