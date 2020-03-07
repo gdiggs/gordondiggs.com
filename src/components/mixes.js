@@ -27,7 +27,7 @@ class Mixes extends Component {
   }
 
   componentDidMount() {
-    axios.get("https://api.mixcloud.com/gdiggs/cloudcasts/")
+    axios.get("https://api.mixcloud.com/resistance-frequencies/cloudcasts/")
       .then(resp => {
         this.setState({
           mixes: resp.data.data
@@ -39,7 +39,7 @@ class Mixes extends Component {
     return (
       <div id="mixes" className="text-center">
         <a className="anchor" name="mixes"></a>
-        <h2>Latest Mixes <a href="https://mixcloud.com/gdiggs">See all</a></h2>
+        <h2>Latest Mixes <a href="https://mixcloud.com/resistance-frequencies">See all</a></h2>
         <ul>
         {this.state.mixes.map(function(mix) {
           return (
