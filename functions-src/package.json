@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
-    "encoding": "^0.1.12",
+    "encoding": "^0.1.13",
     "letterboxd": "^1.0.2",
     "node-instagram": "^4.3.0",
     "twitter": "^1.7.1"
