@@ -39,7 +39,7 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
-    "netlify-lambda": "^1.6.3",
+    "netlify-lambda": "^2.0.1",
     "prettier": "^1.19.1",
     "webpack": "^4.42.0"
   },
