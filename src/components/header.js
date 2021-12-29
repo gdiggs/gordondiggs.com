@@ -22,16 +22,6 @@ class Header extends React.Component {
             <FontAwesome name="envelope" />
           </a>
         </nav>
-        {(location.pathname === rootPath) && (
-          <nav className="main text-center">
-            <span><a href="#blog-posts">Blog Posts</a></span>
-            <span><a href="#tweets">Tweets</a></span>
-            <span><a href="#photos">Photos</a></span>
-            <span><a href="#movies">Movies</a></span>
-            <span><a href="#records">Records</a></span>
-            <span><a href="#mixes">Mixes</a></span>
-          </nav>
-        )}
       </div>
     );
   }

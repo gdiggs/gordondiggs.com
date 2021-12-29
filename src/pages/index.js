@@ -21,11 +21,6 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
         <BlogPosts posts={posts} />
-        <Tweets />
-        <Photos />
-        <Movies />
-        <Records />
-        <Mixes />
       </Layout>
     );
   }
