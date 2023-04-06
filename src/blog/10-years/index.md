@@ -1,6 +1,9 @@
 ---
 title: "10 Years of Collecting Records"
 date: "2021-07-08T09:00:00.000Z"
+layout: base.njk
+tags:
+  - blog
 ---
 
 This week for me marks 10 years of collecting records. In that time, my collection has grown from 1 to 3,207 (with some reductions along the way). To celebrate the day, I put together a mix of songs from records in a few different categories. Before I get to that, here are some stats on my collection as it stands:

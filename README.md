@@ -1,11 +1,9 @@
 ## Running Locally
 
 ```
-npm install --global gastby-cli
-npm run develop
+npm install
+npm run start
 ```
-
-Open http://localhost:8000
 
 ## Deploy
 

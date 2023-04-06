@@ -1,6 +1,9 @@
 ---
 title: "Recipe: Bread Pudding"
 date: "2020-01-02T17:00:00.000Z"
+layout: base.njk
+tags:
+  - blog
 ---
 
 ![Chocolate bread pudding with whipped cream on a plate](./pudding.jpg)
