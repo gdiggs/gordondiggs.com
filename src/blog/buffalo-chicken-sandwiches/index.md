@@ -1,6 +1,9 @@
 ---
 title: "Recipe: Buffalo Chicken Sandwiches"
 date: "2019-09-12T17:00:00.000Z"
+layout: base.njk
+tags:
+  - blog
 ---
 
 ![A Buffalo chicken sandwich sitting on a plate](./sandwich.jpg)

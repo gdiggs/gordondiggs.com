@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i|Reenie+Beanie');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$gd-blue: #054175;
+$gd-light-gray: #666;
+$gd-gray: #333;
+
+a {
+  color: $gd-light-gray;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.anchor {
+    text-decoration: none;
+  }
+}
+
+html {
+  color: $gd-gray;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  color: $gd-blue;
+  font-family: 'Reenie Beanie', arial, serif;
+  font-size: 4.5em;
+  font-weight: bold;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: $gd-blue;
+  }
+}
+
+h2 {
+  font-family: 'Reenie Beanie', arial, serif;
+  font-size: 3em;
+}
+
+nav {
+  font-family: 'Reenie Beanie', arial, serif;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main {
+  img {
+    max-width: 100%;
+  }
+}

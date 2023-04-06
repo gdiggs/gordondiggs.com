@@ -1,6 +1,9 @@
 ---
 title: "You split me right round: optimizing split usage in Ruby"
 date: "2019-12-10T16:38:00.000Z"
+layout: base.njk
+tags:
+  - blog
 ---
 
 When reviewing a team member's pull request recently, I saw code like this:
