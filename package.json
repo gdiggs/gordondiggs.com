@@ -30,7 +30,7 @@
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "sass": "^1.72.0",
-    "webpack": "^5.90.3"
+    "webpack": "^5.94.0"
   },
   "dependencies": {
     "eleventy-plugin-seo": "^0.5.2"
